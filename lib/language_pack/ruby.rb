@@ -673,6 +673,7 @@ WARNING
               bundler_output << pipe("#{bundle_command} --no-clean",
                                      out: "2>&1", env: env_vars, user_env: true)
             end
+          end
         end
 
         if $?.success?
